@@ -1,0 +1,19 @@
+#include <stdio.h>
+   
+int main(){
+    // Define as Varariaveis
+    int r, l, v[10] = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
+    char d;
+    // Le a variavel
+    scanf("%d", &r);
+    getchar();
+    // faz o loop para encontra cada peso do led
+    while(r--){
+        l = 0;
+        while((d = getchar()) != '\n'){
+            l += v[d - '0'];
+        }
+        printf("%d leds\n", l);
+    }
+    return 0;
+}
